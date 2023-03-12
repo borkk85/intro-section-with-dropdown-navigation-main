@@ -28,14 +28,6 @@ dropDowns.forEach((dropdown) => {
   });
 });
 
-const dropDownContents = document.querySelectorAll(".dropdown-menu li");
-
-dropDownContents.forEach((dropDownContent) => {
-  dropDownContent.addEventListener("click", (e) => {
-    e.stopPropagation();
-  });
-});
-
 const heroImage = document.getElementById("hero-image");
 const mobileWidth = 768;
 
