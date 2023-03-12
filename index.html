@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" role="main">
+      <header class="header-container">
+        <div class="logo">
+          <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
+        </div>
+        <nav class="navigation">
+          <ul class="dropdown-menu">
+            <li class="dropdown nav-link">
+              <a href="#" class="dropdown-features"
+                ><span>Features</span>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="arrow-up"
+                  class="arrow-down "
+              /><img src="./images/icon-arrow-up.svg" alt="arrow-up" class="arrow-up hidden"> </a>
+
+              <ul class="dropdown-content hidden">
+                <li class="dropdown-link">
+                  <a href="#"
+                    ><img src="./images/icon-todo.svg" alt="to-do-icon" />Todo
+                    List</a
+                  >
+                </li>
+                <li class="dropdown-link">
+                  <a href="#"
+                    ><img
+                      src="./images/icon-calendar.svg"
+                      alt="calendar-icon"
+                    />Calendar</a
+                  >
+                </li>
+                <li class="dropdown-link">
+                  <a href="#"
+                    ><img
+                      src="./images/icon-reminders.svg"
+                      alt="bell-icon"
+                    />Reminders</a
+                  >
+                </li>
+                <li class="dropdown-link">
+                  <a href="#"
+                    ><img
+                      src="./images/icon-planning.svg"
+                      alt="clock-icon"
+                    />Planning</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown nav-link">
+              <a href="#" class="dropdown-company"
+                ><span>Company</span>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="arrow-down"
+                  class="arrow-down"
+              /> <img src="./images/icon-arrow-up.svg" alt="arrow-up" class="arrow-up hidden"> </a>
+
+              <ul class="dropdown-content hidden">
+                <li class="dropdown-link"><a href="#">History</a></li>
+                <li class="dropdown-link"><a href="#">Our Team</a></li>
+                <li class="dropdown-link"><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li class="nav-link">
+              <a href="#">Careers</a>
+              <img src="" alt="" />
+            </li>
+            <li class="nav-link">
+              <a href="#">About</a>
+              <img src="" alt="" />
+            </li>
+            <div class="nav-links login">
+              <button class="btn btn-login">Login</button>
+              <button class="btn btn-register">Register</button>
+            </div>
+          </ul>
+   
+          <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline">
+              <div class="icon-inner">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon s-ion-icon"
+                  viewBox="0 0 512 512"
+                >
+                  <title>Menu</title>
+                  <path
+                    stroke-linecap="round"
+                    stroke-miterlimit="10"
+                    d="M80 160h352M80 256h352M80 352h352"
+                    class="ionicon-fill-none ionicon-stroke-width"
+                  ></path>
+                </svg>
+              </div>
+            </ion-icon>
+          </button>
+        </nav>
+
+      </header>
+      <section class="hero-section">
+        <div class="text-content">
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="btn-learn">Learn more</button>
+          <div class="logos">
+            <img src="./images/client-databiz.svg" alt="" />
+            <img src="./images/client-audiophile.svg" alt="" />
+            <img src="./images/client-meet.svg" alt="" />
+            <img src="./images/client-maker.svg" alt="" />
+          </div>
+        </div>
+        <div class="logo-main">
+          <img id="hero-image" src="./images/image-hero-desktop.png" alt="" />
+        </div>
+      </section>
+    </div>
+
+    <script src="main.js"></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+
+  <script
+    nomodule=""
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  </body>
+</html>
